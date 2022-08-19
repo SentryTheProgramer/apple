@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        *{
+            padding: 0;
+            margin:0;
+            font-family: poppins;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(big.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            color: white;
+        }
+        /*---------------------------------------------------styling for window bar -------------------------------*/
+        .window-bar{
+            width: 100%;
+            height: 28px;
+            background-color: rgba(0, 0, 0, 0.171);
+            box-shadow: -3px -0px 10px black;
+        }
+        .window-bar ul li{
+                display: inline-flex;
+                font-size: 20px; 
+                float: right;
+                padding-right: 25px;
+                padding-top: 2px;
+                transition: cubic-bezier(0.39, 0.575, 0.565, 1);
+                
+        }
+        .window-bar ul li:hover{
+            color: rgb(0, 225, 255);
+        }
+        span li{
+            margin-left: 15px;
+            border: 2px solid transparent;
+            color: white;
+        }
+        span li:hover{
+            border-bottom-color: blue;
+            cursor: help;
+           
+            color: rgb(255, 255, 255);
+        }
+        /*-----------------------------------------------------styling for container------------------------/*--*//*/*//*/*//**/
+        .conatainer1{
+                        width: 160px;
+                        height: 650px;
+                        background-color: rgba(63, 53, 53, 0.301);
+                        margin-top: 15px;
+                        border-radius: 15px;
+                        padding: 10px;
+                        float: right;
+                       
+                   }
+        .section1{
+                      position: relative;
+                      width:140px;
+                      height: 55px;
+                      background-color: rgba(255, 255, 255, 0.664);
+                      align-items: center;
+                      justify-content: center;
+                      color: black;
+                      float: right;
+                      border-radius: 8px;
+                      transition: 1s;
+                      cursor:pointer;
+                  } 
+                  .section1 ion-icon{
+                      position: relative;
+                     font-size: 30px;
+                     border-radius:30%;
+                     margin-left: 50px;
+                     color: rgb(255, 230, 8);
+                     
+                     transition: 1s;
+                  }
+                  .section1:hover{
+                      margin-right: 50px;
+                      box-shadow: -0px 5px 10px rgba(0, 0, 0, 0.404) ;
+                  }
+                  .section2{
+                    position: relative;
+                      width:140px;
+                      height: 55px;
+                      background-color: rgba(255, 255, 255, 0.664);
+                      align-items: center;
+                      justify-content: center;
+                      color: black;
+                      float: right;
+                      border-radius: 8px;
+                      transition: 1s;
+                      cursor:pointer;
+                      margin-top:5px;
+                  }
+                  .section2 ion-icon{
+                      position: relative;
+                     font-size: 30px;
+                     border-radius:30%;
+                     margin-left: 50px;
+                     color: rgb(8, 115, 255);
+                     transition: 1s;
+                  }
+                  .section2:hover{
+                      margin-right: 50px;
+                      box-shadow: -0px 5px 10px rgba(0, 0, 0, 0.404) ;
+                  }
+                  .section3{
+                    position: relative;
+                      width:140px;
+                      height: 55px;
+                      background-color: rgba(255, 255, 255, 0.664);
+                      align-items: center;
+                      justify-content: center;
+                      color: black;
+                      float: right;
+                      border-radius: 8px;
+                      transition: 1s;
+                      cursor:pointer;
+                      margin-top:5px;
+                  }
+                  .section3 ion-icon{
+                      position: relative;
+                     font-size: 30px;
+                     border-radius:30%;
+                     margin-left: 50px;
+                     color: rgb(206, 8, 255);
+                     transition: 1s;
+                  }
+                  .section3:hover{
+                      margin-right: 50px;
+                      box-shadow: -0px 5px 10px rgba(0, 0, 0, 0.404) ;
+                  }
+                  .section4{
+                    position: relative;
+                      width:140px;
+                      height: 80px;
+                      background-color: rgba(255, 255, 255, 0.664);
+                      
+                      color: black;
+                      float: right;
+                      border-radius: 8px;
+                      transition: 1s;
+                      cursor:pointer;
+                      margin-top:5px;
+                  }
+                  .section4 ion-icon{
+                      position: relative;
+                     font-size: 35px;
+                     
+                     color: rgb(0, 0, 0);
+                     transition: 1s;
+                     margin-left:50px ;
+                  }
+                  .section4:hover{
+                      margin-right: 50px;
+                      box-shadow: -0px 5px 10px rgba(0, 0, 0, 0.397) ;
+                  }
+                  .section5{
+                    position: relative;
+                      width:140px;
+                      height: 80px;
+                      background-color: rgba(255, 255, 255, 0.664);
+                      align-items: center;
+                      justify-content: center;
+                      color: black;
+                      float: right;
+                      border-radius: 8px;
+                      transition: 1s;
+                      cursor:pointer;
+                      margin-top:5px;
+                  }
+                  .section5 ion-icon{
+                      position: relative;
+                     font-size: 50px;
+                     border-radius:30%;
+                     margin-left: 50px;
+                     color: rgb(255, 0, 0);
+                     transition: 1s;
+                  }
+                  .section5:hover{
+                      margin-right: 50px;
+                      box-shadow: -0px 5px 10px rgba(0, 0, 0, 0.404) ;
+                  }
+                  .section6{
+                    position: relative;
+                      width:50px;
+                      height: 200px;
+                      background-color: rgba(255, 255, 255, 0.452);
+                      align-items: center;
+                      justify-content: center;
+                      color: black;
+                      float: right;
+                      border-radius: 8px;
+                      transition: 1s;
+                      cursor:pointer;
+                      margin-top:5px;
+                  }
+                  .section6 ion-icon{
+                      position: relative;
+                    margin-left: 20%;
+                    font-size: 30px;
+                     transition: 1s;
+                  }
+                  .section6:hover{
+                     
+                      box-shadow: -14px 10px 10px rgba(0, 0, 0, 0.404) ;
+                  }
+                  .section7{
+                    position: relative;
+                      width:50px;
+                      height: 200px;
+                      background-color: rgba(255, 255, 255, 0.281);
+                      align-items: center;
+                      justify-content: center;
+                      color: black;
+                      float: right;
+                      border-radius: 8px;
+                      transition: 1s;
+                      cursor:pointer;
+                      margin-top:5px;
+                      margin-right: 35px;
+                  }
+                  .section7 ion-icon{
+                      position: relative;
+                    margin-left: 20%;
+                    font-size: 30px;
+                     transition: 1s;
+                  }
+                  .section7:hover{
+                      
+                      box-shadow: -14px 10px 10px rgba(0, 0, 0, 0.404) ;
+                  }
+                  .brightness{
+                    position: relative;
+                      top: 50px;
+                      width:50px;
+                      height: 150px;
+                      background-color: rgb(255, 255, 255);
+                      align-items: center;
+                      justify-content: center;
+                      color: black;
+                      float: right;
+                      border-radius: 8px;
+                      transition: 1s;
+                      cursor:pointer;
+                      
+                  }
+                  /*-------------------------------------------------------------------styling for apps------------*/
+                  .apps{
+                      width: 95%;
+                      height: 80px;
+                      background: rgba(255, 255, 255, 0.212);
+                      position: absolute;
+                      top: 90vh;
+                      left: 30px;
+                      padding: 5px;
+                      border-radius: 10px;
+                      display: inline-flex;
+                  }
+                  .app1 img{
+                        width: 70px;
+                        height: 70px;
+                        transition: 0.3s ease-out;
+
+                  }
+                  .app1 img:hover{
+                    transform: translateY(-25px);
+                    
+                   
+
+                   
+                  }
+                  
+                  .strip{
+                      width: 2px;
+                      height: 70px;
+                      background-color: rgba(255, 255, 255, 0.288);
+                      margin-right: 5px;
+                  }
+                .img img{
+                    width: 80%;
+                    height:600px;
+                    margin-top: 30px;
+                    margin-left: 60px;
+                }
+                 
+    
+                  
+    </style>
+
+</head>
+<body>
+    <div class="window-bar">
+        <ul>
+            <li style="font-size: 12px;">April Thursday 28 </li>
+            <li><ion-icon name="toggle-outline"></ion-icon></li>
+            <li><ion-icon name="search"></ion-icon></li>
+            <li><ion-icon name="wifi"></ion-icon></li>
+            <li><ion-icon name="battery-full"></ion-icon></li>
+            <span>
+            <li style="float: left; font-size: 20px;"><ion-icon name="logo-apple"></ion-icon></li>
+            <li style="float: left; font-size:15px;"><b>Finder</b></li>
+            <li style="float: left; font-size:15px;">File</li> 
+            <li style="float: left; font-size:15px;">Edit</li>   
+            <li style="float: left; font-size:15px;">View</li>   
+            <li style="float: left; font-size:15px;">Go</li>  
+            <li style="float: left; font-size:15px;">Window</li> 
+            <li style="float: left; font-size:15px;">Help</li>         
+        </span>
+        </ul>
+        
+    </div>
+   
+                <div class="conatainer1">
+                    <div class="section1"> &nbsp;&nbsp;&nbsp;<b> Do Not Disturb</b><ion-icon name="cafe"></ion-icon></div>
+                    <div class="section2">&nbsp;&nbsp;&nbsp; <b> WI-FI</b> - is on&nbsp;&nbsp;&nbsp;<ion-icon name="wifi-outline"></ion-icon></div>
+                    <div class="section3">&nbsp;&nbsp;&nbsp; <b> Bluetooth</b> <ion-icon name="bluetooth"></ion-icon></div>
+                    <div class="section4">&nbsp;&nbsp; <b>NOTIFICATION</b> <ion-icon name="notifications-off"></ion-icon></div>
+                    <div class="section5">&nbsp;&nbsp;&nbsp;<b>Switch-to-OFF</b> <ion-icon name="power"></ion-icon>  </div>
+                    <div class="section6"><div class="brightness"><ion-icon name="sunny"></ion-icon></div></ion-icon></div>
+                    <div class="section7"><ion-icon name="volume-mute"></ion-icon></div>
+                </div>
+
+ <div class="apps">
+                    <div class="app1"><a href="file:///C:/Users/MPS/Desktop/apple%20desk/Apple%20desktop.html"><img src="finder.png" alt=""></a></div>
+                    <div class="app1"><img src="safari.png" alt=""></div>
+                    <div class="app1"><img src="Messages.png" alt=""></div>
+                    <div class="app1"><img src="mail.png" alt=""></div>
+                    <div class="app1"><img src="maps.png" alt=""></div>
+                    <div class="app1"><img src="photos.png" alt=""></div>
+                    <div class="app1"><img src="Facetime.png" alt=""></div>
+                    <div class="app1"><img src="appletv.png" alt=""></div>
+                    <div class="app1"><img src="itunes.png" alt=""></div>
+                    <div class="app1"><img src="podcast.png" alt=""></div>
+                    <div class="app1"><img src="appstore.png" alt=""></div>
+                    <div class="app1"><img src="Settings.png" alt=""></div>
+                    <div class="app1"><img src="folder.png" alt=""></div>
+                    <div class="app1"><img src="google.png" alt=""></div>
+                    <div class="strip"></div>
+                    <div class="app1"><img src="dow.png" alt=""></div>
+                    <div class="app1"><img src="bin.png" alt=""></div>
+</div>
+                
+  <div class="img">              
+
+</div>
+                 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
